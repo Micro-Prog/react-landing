@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home { 
+  height: 150vh;
+  width: 100%;
+  background-color: #000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(60, 68, 179);
+  padding: 10px 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.logo h1 {
+  font-size: 35px;
+  color: #fff;
+  font-weight: 600;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header .nav {
+  list-style: none;
+}
+
+.header .nav ul li {
+  display: inline-block;
+  padding: 10px 30px;
+}
+
+.header .nav ul li a {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.header .btn {
+  padding: 10px 50px;
+}
+
+.header .btn button, .col button {
+  padding: 10px 30px;
+  background-color: blue;
+  border: 2px solid #050786;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+}
+
+.col {
+  flex-basis: 50%;
+}
+
+.col1 {
+  margin-left: 45px;
+}
+
+
+.col h2 {
+  font-size: 45px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.col p {
+  font-size: 25px;
+  color: gray;
+  font-size: large;
+  margin-top: 20px;
+}
+
+.col button {
+  margin-top: 20px;
+}
+
+.card {
+  width: 200px;
+  height: 220px;
+  display: flex;
+  float: left;
+  justify-content: start;
+  box-sizing: border-box;
+  margin: 10px 15px;
+  padding: 15px 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 1s ease;
+  cursor: pointer;
+}
+
+.card1 {
+  background-image: url(Assets/afterlife.jpg);
+}
+
+.card2 {
+  background-image: url(Assets/harrypotter.jpg);
+}
+
+.card3 {
+  background-image: url(Assets/mowgli.jpg);
+}
+
+.card4 {
+  background-image: url(Assets/shift.png);
+}
+
+.card5 {
+  background-image: url(Assets/squidgame.webp);
+}
+
+.card6 {
+  background-image: url(Assets/transformers.jpg);
+}
+
+.card:hover {
+  transform: translateY(-10px);
 }
